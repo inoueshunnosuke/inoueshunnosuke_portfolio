@@ -1,0 +1,360 @@
+@charset "UTF-8";
+
+/* パソコンで見たときは"pc"のclassがついた画像が表示される */
+@media screen and (min-width:1000px){
+#pc {
+    display: block !important;
+}
+
+#sp {
+    display: none !important;
+}
+
+img{
+    width: 850px;
+    height: auto;
+    }
+
+#form{
+    width: 850px;
+    margin: 0 auto;
+    }
+
+.submit{
+    margin-top: 10px;
+    margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
+    display: block;
+    border: none;
+    width: 900px;
+    height: 137px;
+    text-indent: -9999px;
+    background: url(../img/btn2.jpg) no-repeat 0 0;
+}
+
+.submit:hover{
+    background: url(../img/btn2.jpg) no-repeat 0 -10px;
+    margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.time{
+    display: flex;
+}
+
+.time li{
+    position: relative;
+    left: -70px;
+}
+
+.check li{
+    margin-right: 200px;
+}
+    
+.accbox .accshow {
+    height: 0;
+    padding: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: 0.8s;
+    width:63.5%;
+    margin: 0 auto;
+    width: 55%;
+}
+}
+
+/* スマートフォンで見たときは"sp"のclassがついた画像が表示される */
+@media only screen and (max-width: 999px) {
+#pc {
+    display: none !important;
+    }
+#sp {
+    display: block !important;
+    }
+    img {
+        max-width: 100%;
+    }
+
+.time li{
+    position: relative;
+    top: -1em;
+    font-size: 17px;
+    margin: 10px;
+    }
+    
+    .time input[type="checkbox"]{
+        position: relative;
+        top: 0.5px;
+    }
+    
+    .time dt{
+        position:relative;
+        left: -0.5em;
+    }
+
+    .in li{
+    display: inline;
+    }
+
+    .margin{
+        margin-left: 100px;
+    }
+    
+    .check li{
+        font-size: 17px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        margin-left: 13px;
+        margin-right: 0;
+    }
+    
+    .check li a{
+        margin-right: 78px;
+    }
+    
+    .left{
+        position: relative;
+        left: -7px;
+    }
+    
+    .check li:first-child{
+        margin-top:30px;
+    }
+    
+.submit{
+    margin-top: 10px;
+    margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
+    display: block;
+    border: none;
+    width: 350px;
+    height: 71px;
+    text-indent: -9999px;
+    background: url(../img_sp/btn2_sp.jpg) no-repeat 0 0;
+}
+
+.submit:hover{
+    background: url(../img_sp/btn2_sp.jpg) no-repeat 0 -10px;
+    margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+    
+.accbox .accshow {
+    height: 0;
+    padding: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: 0.8s;
+    width:100%;
+    margin: 0 auto;
+    width: 80%;
+}
+}
+/*main*/
+div{
+    position: relative;
+    
+}
+
+img{
+    display: block;
+    margin: 0 auto;
+}
+
+dl{
+    width:95%;
+    border-top: 10px solid #013C98;
+    border-left: 10px solid #013C98;
+    border-right: 10px solid #013C98;
+    border-bottom: 10px solid #013C98;
+    margin: 0 auto;
+}
+
+dl dt{
+    padding: 5px;
+    margin: 5px;
+    color: #293E77;
+    font-size: 20px;
+    font-weight: 800;
+    margin-left: 15px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+dl dd{
+    margin-left: 10px;
+}
+
+input{
+    width: 100%;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"]{
+    width: 97%;
+    height: 3em;
+    padding: 16px;
+    border-color: #013C98;
+}
+
+.check input[type="checkbox"],
+.time input[type="checkbox"]{
+    -webkit-appearance: none;
+    border: 2px solid #1A3761;
+    -webkit-box-sizing: border-box;
+    width: 20px;
+    height: 20px;
+    background: #fff;
+    position: relative;
+    left: -1em;
+}
+
+.check input[type="checkbox"]{
+    float: left;
+}
+
+input[type="checkbox"]:checked{
+    background-image: url(../img/check.png);
+    background-repeat: no-repeat;
+}
+
+input:required::after{
+    border: 1px solid red;
+}
+
+.border{
+    border-top: 1px solid #1A3761;
+    border-left: 1px solid #1A3761;
+    border-right: 1px solid #1A3761;
+    border-bottom: 1px solid #1A3761;
+    margin:0 10px 10px 10px;
+}
+
+.day{
+    margin-bottom: 0;
+}
+
+.btn{
+    border: 0.000000001px solid #fff;
+    width: 850px;
+    margin: 0 auto;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.btn img{
+    width: 100%;
+    transition-duration: 0.5s;
+}
+
+.btn:hover{
+    transform: scale(1.1);
+    transition-duration: 0.5s;
+}
+
+.btnf{
+    background-image: url(../img/06_background.jpg);
+    background-size: 850px;
+    width: 850px;
+    margin: 0 auto;
+}
+
+.btnf a img:hover{
+    transform: scale(1.1);
+    transition-duration: 0.5s;
+}
+
+li{
+    list-style-type: none;
+    padding: 5px;
+    font-size: 20px;
+    font-weight: 800;
+    color: #293E77;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+label{
+    display: block;
+    overflow: hidden;
+}
+
+li:first-child{
+    margin-top: 10px;
+}
+
+#sp{
+    width: 100%;
+    height: auto;
+    size: cover;
+    margin: 0 auto;
+}
+
+.btn2 img{
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.accbox {
+    margin: 0 auto;
+    padding: 0;
+}
+
+.accbox label {
+    display: block;
+    color :#fff;
+    margin: 0 auto;
+    padding: 0;
+    font-weight: bold;
+    background :#a4cbf3;
+    cursor :pointer;
+    transition: all 0.5s;
+}
+
+.accbox input {
+    display: none;
+}
+
+
+.cssacc:checked + .accshow {
+    height: auto;
+    padding: 5px;
+    background: #fff;
+    opacity: 1;
+}
+
+h3:first-child{
+    margin-top:0;
+}
+
+
+h4{
+    display:inline;
+    border-bottom: 3px solid #F8E81C;
+    margin: 0;
+    padding: 0;
+}
+
+p{
+    display: inline;
+    line-height: 30px;
+}
+
+.accbox label{
+    display: inline;
+}
+
+.accshow img{
+    width: 100%;
+}
